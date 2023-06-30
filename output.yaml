@@ -1,0 +1,36 @@
+
+
+Outputs:
+VPC:
+  Description: VPC
+  Value: !Ref VPC
+NATGatewayA:
+  Description: NAT Gateway A
+  Value: !Ref NatGatewayA
+NATGatewayB:
+  Description: NAT Gateway B
+  Value: !Ref NatGatewayB
+AvailabilityZoneA:
+  Description: Availability Zone A
+  Value: !GetAtt WebSubnetA.AvailabilityZone
+AvailabilityZoneB:
+  Description: Availability Zone B
+  Value: !GetAtt WebSubnetB.AvailabilityZone
+WebSubnetA:
+  Description: Web Subnet Availability Zone A
+  Value: !Ref WebSubnetA
+WebSubnetB:
+  Description: Web Subnet Availability Zone B
+  Value: !Ref WebSubnetB
+AppSubnetA:
+  Description: App Subnet Availability Zone A
+  Value: !Ref AppSubnetA
+AppSubnetB:
+  Description: App Subnet Availability Zone B
+  Value: !Ref AppSubnetB
+DBSubnetA:
+  Description: DB Subnet Availability Zone A
+  Value: !Ref DBSubnetA
+DBSubnetB:
+  Description: DB Subnet Availability Zone B
+  Value: !Ref DBSubnetB
